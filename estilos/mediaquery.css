@@ -1,0 +1,33 @@
+@charset "UTF - 8";
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .conteiner {
+        display: grid;
+        max-width: 675px;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(0px, 1fr));
+        grid-template-areas: 
+            "header"
+            "principal"
+            "footer1"
+            "footer"
+            "lateral";
+    }
+        
+}
+
+@media screen and (max-width: 768px) {
+    .conteiner {
+        display: grid;
+        max-width: 375px;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(0px, 1fr));
+        grid-template-areas: 
+            "header"
+            "principal"
+            "footer1"
+            "footer"
+            "lateral";
+    }
+        
+}
